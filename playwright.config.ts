@@ -20,7 +20,7 @@ export default defineConfig({
   // Keeps command line output readable while generating deep Allure assets
   reporter: [
     ['list'],
-    ['html', { open: 'true' }],
+    ['html', { open: 'never' }],
     ['allure-playwright'],
     [environment === 'qa' ? 'line' : 'dot'],
   ],
