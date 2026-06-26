@@ -1,10 +1,12 @@
 name: Playwright Tests
 
 on:
+  # Manual Trigger
   workflow_dispatch:
 
+  # Run every day at 5:00 PM IST (11:30 AM UTC)
   schedule:
-    - cron: '50 11 * * *'   # 5:20 PM IST
+    - cron: '30 11 * * *'
 
 jobs:
   test:
@@ -18,7 +20,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'
+          cache: npm
 
       - name: Install Dependencies
         run: npm ci
