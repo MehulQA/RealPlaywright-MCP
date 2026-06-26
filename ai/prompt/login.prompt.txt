@@ -1,0 +1,2 @@
+Login to SauceDemo using standard user.
+Verify Products page is displayed.
