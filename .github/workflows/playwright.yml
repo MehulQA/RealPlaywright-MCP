@@ -1,12 +1,10 @@
 name: Playwright Tests
 
 on:
-  # Manual Trigger
   workflow_dispatch:
 
-  # Run every day at 5:00 PM IST (11:30 AM UTC)
   schedule:
-    - cron: '30 11 * * *'
+    - cron: '30 11 * * *' # 5:00 PM IST
 
 jobs:
   test:
